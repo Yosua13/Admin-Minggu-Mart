@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "833142017670",
+    "project_id": "minggu-mart-6b372",
+    "storage_bucket": "minggu-mart-6b372.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833142017670:android:bc69575ad7fdce9ba30b07",
+        "android_client_info": {
+          "package_name": "com.example.adminminggumart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjUsCiCGjimmfnd2HtMrBFoUOikjgILhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

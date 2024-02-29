@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wave Of Food"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attantion"
+                app:layout_constraintEnd_toEndOf="@+id/pendingOrderTextView"
+                app:layout_constraintStart_toStartOf="@+id/pendingOrderTextView"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <TextView
+                android:id="@+id/pendingOrderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Pending Order"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="30"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/pendingOrderTextView"
+                app:layout_constraintStart_toStartOf="@+id/pendingOrderTextView"
+                app:layout_constraintTop_toBottomOf="@+id/pendingOrderTextView" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:text="Complete\nOrder"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toEndOf="@+id/pendingOrderTextView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="30"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dollar"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Whole Time\nEarning"
+                android:layout_marginRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$30"
+                android:textColor="#4CAF50"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/allItemMenu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/pluse_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Menu"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/allItemMenu"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView6i"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/eye"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Item Menu"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6i"
+                app:layout_constraintStart_toStartOf="@+id/imageView6i"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6i" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView6l"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6l"
+                app:layout_constraintStart_toStartOf="@+id/imageView6l"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6l" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/createUser"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/allItemMenu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="@+id/profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView6k"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/usernew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New User"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6k"
+                app:layout_constraintStart_toStartOf="@+id/imageView6k"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6k" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/outForDeliveryButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView67"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/shopping_bag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Dispatch"
+                android:textColor="#FFC107"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView67"
+                app:layout_constraintStart_toStartOf="@+id/imageView67"
+                app:layout_constraintTop_toBottomOf="@+id/imageView67" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewi3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/createUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/outForDeliveryButton"
+        app:layout_constraintTop_toTopOf="@+id/outForDeliveryButton">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard">
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/log_out"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#FE3B3B"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView60"
+                app:layout_constraintStart_toStartOf="@+id/imageView60"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Design By\nYosua"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
